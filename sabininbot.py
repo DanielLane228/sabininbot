@@ -18,7 +18,7 @@ def send_welcome(message):
     print(message.chat.id)
     starttime=time.time()
     while True:
-        if russia.day == 9 and russia.month == 11:
+        if russia.day == 10 and russia.month == 11:
             bot.send_message(message.chat.id, 'Happy birthday you still cutie little pie :3')
             x = random.randint(1, 8)
             photo = open(f'{x}.jpg', 'rb')
