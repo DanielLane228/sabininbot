@@ -6,7 +6,7 @@ import emoji
 import random
 import os
 token = os.environ.get('TOKEN')
-sabina = os.environ.get(sabina)
+sabina = int(os.environ.get('sabina'))
 bot = telebot.TeleBot(token)
 utcnow = datetime.datetime.now(tz=pytz.UTC)
 russia = utcnow.astimezone(pytz.timezone('Europe/Moscow'))
