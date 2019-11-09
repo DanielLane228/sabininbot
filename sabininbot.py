@@ -16,7 +16,7 @@ def send_welcome(message):
     bot.reply_to(message, 'Ты опять время забыла да?' + emoji.emojize('\U0001F644'))
     bot.send_message(message.chat.id, str(now.strftime("%H:%M:%S, %A, %B %d, %Y")))
     if russia.day == 10 and russia.month == 11:
-        bot.send_message(message.chat.id, 'Happy birthday you still cutie little pie :3')
+        bot.send_message(sabina, 'Happy birthday you still cutie little pie :3')
         x = random.randint(1, 8)
         photo = open(f'{x}.jpg', 'rb')
         bot.send_photo(sabina, photo)
@@ -24,4 +24,4 @@ def send_welcome(message):
         bot.send_audio(sabina, audio)
 
 
-bot.polling(none_stop=True, timeout=60)
+bot.polling(none_stop=True)
