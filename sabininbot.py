@@ -24,4 +24,4 @@ def send_welcome(message):
         bot.send_audio(sabina, audio)
 
 
-bot.polling(none_stop=True)
+bot.polling(none_stop=True, timeout=60)
