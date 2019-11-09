@@ -4,7 +4,8 @@ import pytz
 import time
 import emoji
 import random
-token = 'TOKEN'
+import os
+token = os.environ.get('TOKEN')
 bot = telebot.TeleBot(token)
 utcnow = datetime.datetime.now(tz=pytz.UTC)
 russia = utcnow.astimezone(pytz.timezone('Europe/Moscow'))
