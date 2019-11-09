@@ -11,7 +11,7 @@ bot = telebot.TeleBot(token)
 utcnow = datetime.datetime.now(tz=pytz.UTC)
 russia = utcnow.astimezone(pytz.timezone('Europe/Moscow'))
 now = utcnow.astimezone(pytz.timezone('Asia/Chongqing'))
-@bot.message_handler(commands=['start'])
+@bot.message_handler(content_type=['text'])
 def send_welcome(message):
     bot.reply_to(message, 'Ты опять время забыла да?' + emoji.emojize('\U0001F644'))
     bot.send_message(message.chat.id, str(now.strftime("%H:%M:%S, %A, %B %d, %Y")))
