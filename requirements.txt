@@ -1,4 +1,4 @@
-telebot
-datetime
+pyTelegramBotAPI
+DateTime
 pytz
 emoji
