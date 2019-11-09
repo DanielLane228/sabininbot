@@ -20,9 +20,9 @@ def send_welcome(message):
             bot.send_message(message.chat.id, 'Happy birthday you still cutie little pie :3')
             x = random.randint(1, 8)
             photo = open(f'{x}.jpg', 'rb')
-            bot.send_photo(sabina, photo)
+            bot.send_photo(message.chat.id, photo)
             audio = open('Ирина_Аллегрова_С_днем_рождения!.mp3', 'rb')
-            bot.send_audio(sabina, audio)
+            bot.send_audio(message.chat.id, audio)
         time.sleep(86400 - ((time.time() - starttime) % 86400))
 
 
